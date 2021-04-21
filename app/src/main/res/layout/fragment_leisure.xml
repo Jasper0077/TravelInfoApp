@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    tools:context=".LeisureFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="The Spring Mall"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="The Spring Shopping Mall is a shopping mall in Kuching, Sarawak, Malaysia. Located at Persiaran Spring, it was opened in January 2008.
+                \nIt was the largest mall in Sarawak since its establishment until Boulevard Shopping Mall opened in 2013."
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/frame_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_the_spring"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="Aside from its main anchor tenants, The Spring Shopping Mall contains a wide variety of well-known international brands. These include fashion names such as Coach New York, Cotton On, Esprit, Fossil, HLA, Levi's, Padini and Uniqlo.
+                \nLingerie stores including La Senza, Triumph and Victoria's Secret, jewelry stores like Habib Jewels and Pandora.
+                \nPersonal care and cosmetics stores such as Bath and Body Works, Clarins, Dior, L'Occitane en Provence, M·A·C, Sephora, Shu Uemura and The Face Shop, the 100-yen shop Daiso, footwear firms like Aldo, Bata Shoes, Hush Puppies and Skechers,
+                \nchain stores such as Guardian, Sasa and Watsons, consumer electronics retail store like Huawei, Samsung and Sony, and the bookstore MPH."
+                android:textSize="16dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

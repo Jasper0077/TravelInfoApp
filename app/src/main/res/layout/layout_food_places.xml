@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_food_places" >
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="5dp"
+            android:id="@+id/restaurant_img"
+            android:src="@drawable/img_eat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Wong"
+            android:id="@+id/restaurant_name"
+            android:layout_toRightOf="@+id/restaurant_img"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: 5"
+            android:id="@+id/restaurant_rating"
+            android:layout_toEndOf="@id/restaurant_img"
+            android:textColor="#777"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chinese, Noodles"
+            android:id="@+id/restaurant_label"
+            android:layout_toEndOf="@id/restaurant_rating"
+            android:textColor="#777"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/restaurant_loc_ic"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/restaurant_img"
+            android:src="@drawable/ic_location_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Pisang Road West"
+            android:id="@+id/restaurant_location"
+            android:layout_toEndOf="@id/restaurant_loc_ic"
+            android:textColor="#777"
+            android:textStyle="bold"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

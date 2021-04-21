@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/attraction_nav"
+    app:startDestination="@id/cultureFragment">
+
+    <fragment
+        android:id="@+id/cultureFragment"
+        android:name="com.example.finalassignment.CultureFragment"
+        android:label="fragment_culture"
+        tools:layout="@layout/fragment_culture" />
+    <fragment
+        android:id="@+id/adventureFragment"
+        android:name="com.example.finalassignment.AdventureFragment"
+        android:label="fragment_adventure"
+        tools:layout="@layout/fragment_adventure" />
+    <fragment
+        android:id="@+id/leisureFragment"
+        android:name="com.example.finalassignment.LeisureFragment"
+        android:label="fragment_leisure"
+        tools:layout="@layout/fragment_leisure" />
+</navigation>

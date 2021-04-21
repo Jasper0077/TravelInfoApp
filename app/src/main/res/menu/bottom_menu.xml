@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cultureFragment"
+        android:title="Culture"
+        android:icon="@drawable/ic_culture"/>
+    <item
+        android:id="@+id/adventureFragment"
+        android:title="Adventure"
+        android:icon="@drawable/ic_hiking"/>
+    <item
+        android:id="@+id/leisureFragment"
+        android:title="Leisure"
+        android:icon="@drawable/ic_park"/>
+</menu>
